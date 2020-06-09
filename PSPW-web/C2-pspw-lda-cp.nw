@@ -1,0 +1,25 @@
+start c2_pspw_lda_md
+title "C2 restricted singlet dimer, LDA/44Ry - constant energy Car-Parrinello simulation"
+geometry 
+  C -0.62 0.0 0.0
+  C 0.62 0.0 0.0
+end
+pspw 
+  simulation_cell units angstroms 
+    boundary_conditions aperiodic 
+    lattice 
+      lat_a 10.00d0 
+      lat_b 10.00d0 
+      lat_c 10.00d0 
+    end 
+    ngrid 40 40 40 
+  end 
+  Car-Parrinello 
+    fake_mass 600.0 
+    time_step 5.0 
+    loop 10 10 
+  end
+end
+set nwpw:minimizer 2
+task pspw energy
+task pspw Car-Parrinello

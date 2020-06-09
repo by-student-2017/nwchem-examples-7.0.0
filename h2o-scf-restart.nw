@@ -1,0 +1,5 @@
+restart h2o
+
+title "Water geometry optimization"
+ 
+task scf optimize

@@ -1,0 +1,8 @@
+start ne
+title "Neon"
+geometry; ne 0 0 0; end
+basis spherical 
+  ne library aug-cc-pvdz
+end
+scf; thresh 1e-10; end
+task scf

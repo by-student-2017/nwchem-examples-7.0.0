@@ -1,0 +1,15 @@
+start c2_pspw_pbe96
+title "C2 restricted singlet dimer optimization - PBE96/44Ry"
+geometry 
+  C -0.62 0.0 0.0
+  C 0.62 0.0 0.0
+end
+pspw 
+  simulation_cell units angstroms 
+    boundary_conditions aperiodic 
+    SC 10.0 ngrid 40 40 40 
+  end 
+  xc pbe96
+end
+set nwpw:minimizer 2
+task pspw optimize

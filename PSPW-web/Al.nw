@@ -1,0 +1,34 @@
+title "Aluminum optimization with fractional occupation"
+start aluminumfrac
+memory 900 mb
+geometry noautoz
+   system crystal
+     lat_a 3.0
+     lat_b 3.0
+     lat_c 3.0
+     alpha 90.0
+     beta  90.0
+     gamma 90.0
+   end
+Al  0.0 0.0 0.0
+Al  0.0 0.5 0.5
+Al  0.5 0.5 0.0
+Al  0.5 0.0 0.5
+end
+set nwpw:cif_filename aluminum
+nwpw
+   scf anderson
+   mult 1
+   smear  temperature 3500.0 fermi
+   cutoff 15.0
+   monkhorst-pack 3 3 3
+   ewald_ncut 8
+   mapping 2
+end
+set nwpw:lcao_skip .true.
+set includestress .true.
+#set nwpw:stress_numerical .true.
+driver
+   clear
+end
+task band optimize ignore
