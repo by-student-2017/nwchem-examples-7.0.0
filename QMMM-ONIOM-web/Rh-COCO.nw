@@ -10,7 +10,7 @@ basis LANL2DZ spherical
 end
    
 ecp Hay-Wadt_MB_(n+1)_ECP
-  rh library Hay-Wadt_MB_(n+1)_ECP
+  rh library "HAY/WADT (N-1) ECP"
 end
    
 # This is the minimal basis used by Gaussian.  It is not the same 

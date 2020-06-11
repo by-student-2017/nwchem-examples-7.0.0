@@ -17,15 +17,36 @@ geometry
   C  0.14140463  2.07558249  1.96815181  # 14
   H  0.78955302  2.52533887  1.19760764
   H -0.86543435  2.50958894  1.88075113
-  ... and 22 other hydrogen atoms on the methyl groups
+  H  1.97224     1.78670    -1.24521
+  H  3.50744     1.11307    -0.75282
+  H  2.34936     1.62123     0.45287
+  H  1.99662    -2.05638     0.39796
+  H  2.36397    -0.71014     1.44952
+  H  3.52205    -1.21830     0.24384
+  H -3.53352    -1.10096     0.51497
+  H -2.14772    -1.70937     1.38818
+  H -2.14809    -1.70891    -0.35912
+  H -1.99641     2.05703    -0.39776
+  H -3.52191     1.21907    -0.24375
+  H -2.36389     0.71099    -1.44953
+  H -0.17603    -0.22719    -3.85328
+  H  1.35965     0.02363    -3.05838
+  H  0.06956     1.18395    -2.85255
+  H -0.58177    -2.33672    -2.90742
+  H -0.68821    -2.54562    -1.17592
+  H  0.87472    -2.40702    -1.94474
+  H -0.23824    -1.19685     2.77333
+  H -1.31647     0.12006     3.16864
+  H  0.30448     0.09238     3.82043
+  H  0.47116     2.28661     2.96396
 end
    
 basis aug-cc-pvtz spherical
-  C library aug-cc-pvtz; H library aug-cc-pvtz
+  C library aug-cc-pvtz; H library aug-cc-pvtz; N library aug-cc-pvtz
 end
    
 basis aug-cc-pvdz spherical
-  C library aug-cc-pvtz; H library aug-cc-pvtz
+  C library aug-cc-pvtz; H library aug-cc-pvtz; N library aug-cc-pvtz
 end
    
 oniom      

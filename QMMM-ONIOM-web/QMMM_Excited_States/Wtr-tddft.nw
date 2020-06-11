@@ -3,21 +3,20 @@ start wtr
 permanent_dir ./perm
 scratch_dir ./data
 
-prepare
-  source wtr0.pdb
-  new_top new_seq
-  new_rst
-  modify segment 1  quantum
-  center
-  orient
-  solvate box 3.0
-  update lists
-  ignore
-  write wtr_ref.rst
-  write wtr_ref.pdb
-end
-
-task prepare
+#prepare
+#  source wtr0.pdb
+#  new_top new_seq
+#  new_rst
+#  modify segment 1  quantum
+#  center
+#  orient
+#  solvate box 3.0
+#  update lists
+#  ignore
+#  write wtr_ref.rst
+#  write wtr_ref.pdb
+#end
+#task prepare
    
 md
   system wtr_ref
@@ -38,10 +37,6 @@ end
 
 qmmm
   bq_zone 3.0
-end
-
-propetry
-  dipole
 end
 
 task qmmm tddft energy
